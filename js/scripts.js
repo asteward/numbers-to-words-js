@@ -46,3 +46,13 @@ var numberReader = function(inputDigit) {
   }
   return convertedPhrase.join(" ");
 };
+
+$(document).ready(function() {
+	$("#input-number").focus();
+	$("form#number-form").submit(function(event) {
+		
+		var phrase = numberReader($("#input-number").val());
+		$("#answer").text(phrase);
+		event.preventDefault();
+	});
+});

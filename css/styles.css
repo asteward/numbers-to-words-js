@@ -1,3 +1,38 @@
+body {
+  text-align: center;
+}
+
 .jumbotron {
-  background-color: #0095FF
+  background-color: #0095FF;
+  color: white;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+}
+
+#input-number {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  text-align: center;
+}
+
+.container {
+  background-color: #93FF69;
+  display:block;
+  height: 100%;
+  overflow: auto;
+}
+
+#answer-block h2 {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20%;
+}
+
+#answer {
+
 }

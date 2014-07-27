@@ -11,15 +11,21 @@
   <body>
     <div class="jumbotron">
       <h1>Number-to-Word Converter</h1>
+      <hr />
       <h2>Enter a number to convert to written form</h2>
-      <form>
-        <label for="input-number">Number:</label>
-        <input class="form-control" id="input-number" type="submit/number" min="0" placeholder="100">
+
+      <form id="number-form">
+        <label for="input-number"></label>
+        <input class="form-control" id="input-number" type="number" min="0" max="999999999999999" placeholder="100">
+        <br />
+        <button class="btn btn-success" id="number-submit" type="submit">Convert!</button>
       </form>
     </div><!-- jumbotron class -->
     <div class="container">
-
-
+      <div id="answer-block">
+        <h2>Converted Text:</h2>
+        <h3><span id="answer"></span></h3>
+      </div><!-- answer-block id -->
     </div><!-- container class -->
   </body>
 </html>
