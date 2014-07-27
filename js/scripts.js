@@ -50,7 +50,7 @@ var numberReader = function(inputDigit) {
 $(document).ready(function() {
 	$("#input-number").focus();
 	$("form#number-form").submit(function(event) {
-		
+		$("#answer-block").show();
 		var phrase = numberReader($("#input-number").val());
 		$("#answer").text(phrase);
 		event.preventDefault();

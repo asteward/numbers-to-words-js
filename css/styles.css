@@ -1,10 +1,11 @@
-body {
+html, body {
+  height: 100%;
   text-align: center;
+  color: white;
 }
 
 .jumbotron {
   background-color: #0095FF;
-  color: white;
 }
 
 .jumbotron h1 {
@@ -21,18 +22,27 @@ body {
 }
 
 .container {
-  background-color: #93FF69;
+  background-color: #7AD656;
   display:block;
-  height: 100%;
-  overflow: auto;
+  height: 55%;
+  width: 100%;
+}
+
+#answer-block {
+  display: none;
 }
 
 #answer-block h2 {
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: bolder;
   text-align: left;
   padding-left: 20%;
+  color: white;
 }
 
-#answer {
 
+#answer-block h3 {
+  font-size: 500%;
+  font-weight: bold;
+  color: white;
 }
