@@ -56,6 +56,6 @@ describe("numberReader", function() {
   });
 
   it("Returns the written form of a fifteen digit number", function() {
-  numberReader(300000000000000).should.equal("three hundred trillion");
+  numberReader(300000000000001).should.equal("three hundred trillion one");
   });
 });
