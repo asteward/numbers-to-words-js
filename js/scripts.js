@@ -51,6 +51,24 @@ var numberReader = function(inputDigit) {
     } else{
       return digitValues[tempDigitString[0] * 10] + " " + numberReader(tempDigitString.substr(1));
     }
+  } else if (tempReducedDigit < 1000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0]] + " hundred million";
+    } else{
+      return digitValues[tempDigitString[0]] + " hundred " + numberReader(tempDigitString.substr(1));
+    }
+  } else if (tempReducedDigit < 10000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0]] + " billion";
+    } else{
+      return digitValues[tempDigitString[0]] + " billion " + numberReader(tempDigitString.substr(1));
+    }
+  } else if (tempReducedDigit < 100000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0] * 10] + " billion";
+    } else{
+      return digitValues[tempDigitString[0] * 10] + " " + numberReader(tempDigitString.substr(1));
+    }
   } else {
     return "Error - Unable to read number";
   }

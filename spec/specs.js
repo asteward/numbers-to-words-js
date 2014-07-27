@@ -30,4 +30,16 @@ describe("numberReader", function() {
   it("Returns the written form of a eight digit number", function() {
   numberReader(46100000).should.equal("forty six million one hundred thousand");
   });
+
+  it("Returns the written form of a nine digit number", function() {
+  numberReader(500000000).should.equal("five hundred million");
+  });
+
+  it("Returns the written form of a ten digit number", function() {
+  numberReader(1000000000).should.equal("one billion");
+  });
+
+  it("Returns the written form of a eleven digit number", function() {
+  numberReader(20000000000).should.equal("twenty billion");
+  });
 });
