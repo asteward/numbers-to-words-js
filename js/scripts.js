@@ -69,6 +69,30 @@ var numberReader = function(inputDigit) {
     } else{
       return digitValues[tempDigitString[0] * 10] + " " + numberReader(tempDigitString.substr(1));
     }
+  } else if (tempReducedDigit < 1000000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0]] + " hundred billion";
+    } else{
+      return digitValues[tempDigitString[0]] + " hundred " + numberReader(tempDigitString.substr(1));
+    }
+  } else if (tempReducedDigit < 10000000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0]] + " trillion";
+    } else{
+      return digitValues[tempDigitString[0]] + " trillion " + numberReader(tempDigitString.substr(1));
+    }
+  } else if (tempReducedDigit < 100000000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0] * 10] + " trillion";
+    } else{
+      return digitValues[tempDigitString[0] * 10] + " " + numberReader(tempDigitString.substr(1));
+    }
+  } else if (tempReducedDigit < 1000000000000000) {
+    if (tempDigitString.substr(1) < 1) {
+      return digitValues[tempDigitString[0]] + " hundred trillion";
+    } else{
+      return digitValues[tempDigitString[0]] + " hundred " + numberReader(tempDigitString.substr(1));
+    }
   } else {
     return "Error - Unable to read number";
   }

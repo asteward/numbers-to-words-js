@@ -42,4 +42,20 @@ describe("numberReader", function() {
   it("Returns the written form of a eleven digit number", function() {
   numberReader(20000000000).should.equal("twenty billion");
   });
+
+  it("Returns the written form of a twelve digit number", function() {
+  numberReader(300000000000).should.equal("three hundred billion");
+  });
+
+  it("Returns the written form of a thirteen digit number", function() {
+  numberReader(1000000000000).should.equal("one trillion");
+  });
+
+  it("Returns the written form of a fourteen digit number", function() {
+  numberReader(20000000000000).should.equal("twenty trillion");
+  });
+
+  it("Returns the written form of a fifteen digit number", function() {
+  numberReader(300000000000000).should.equal("three hundred trillion");
+  });
 });
