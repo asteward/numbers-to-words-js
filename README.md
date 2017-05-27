@@ -13,5 +13,5 @@ Clone this repository or download the .zip and open up the index.html file in th
 ## Dependencies
 - [jQuery](http://jquery.com/ "jQuery")
 - [Bootstrap](http://getbootstrap.com/ "Bootstrap")
-- [Mocha](http://visionmedia.github.io/mocha/ "Mocha")
+- [Mocha](http://mochajs.org/ "Mocha")
 - [Chai](http://chaijs.com/ "Chai")
